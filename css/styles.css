@@ -1,0 +1,551 @@
+/*ESTILOS GENERALES*/
+*{
+	margin: 0px;
+	padding: 0px;
+	text-decoration: none;
+	font-family: 'Open Sans', Verdana;
+}
+html, body{
+	overflow-x: hidden;
+}
+body{
+	background: white;
+}
+.clearfix{  /*evita flotadores*/
+	clear: both;
+	float: none;
+}
+.container{
+	width: 85%;
+	margin: 0px auto;
+}
+
+/*cabecera*/
+#main-header{
+	background: white;
+	height: 100px;
+	line-height: 85px;
+}
+#logo{
+	width: 63%;
+	float: left;
+}
+#logo h1{
+	font-weight: bold;
+	font-size: 25px;
+	color: #FB314E;
+}
+
+#menu{
+	width: 380px;
+	float: left;
+
+}
+#menu ul li {
+	list-style: none;
+	float: left;
+	margin-left: 16px;
+	margin-right: 16px;
+}
+# menu ul li a{
+	color: black;
+}
+#menu ul li a:hover{
+	color: #FB314E;
+}
+
+/*slider*/
+
+#slider{
+	height: 300px;
+	background: #FB314E;
+}
+#slider h2{
+	font-size: 40px;
+	text-align: center;
+	color: white;
+	line-height: 290px;
+	text-shadow: 0px 0px 6px black;
+}
+
+/*servicios*/
+
+.subheader{
+	font-size: 34px;
+	color: #333;
+	text-align:center;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #FB314E
+}
+.service, .video{
+	width: 33%;
+	text-align: center;
+	float: left;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	background-color: red;
+
+}
+
+
+
+.service2{
+	width: 26%;
+	text-align: center;
+	float: left;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	background-color: #ebc270;
+	margin-left: 20px;
+	height: 60px;
+border-radius: 20px 20px 20px 20px;
+-moz-border-radius: 20px 20px 20px 20px;
+-webkit-border-radius: 20px 20px 20px 20px;
+border: 0px solid #000000;
+
+}
+.service2 h3{
+	font-size: 40px;
+	color: #444;
+	display: block;
+	width: 80%;
+	margin: 0px auto;
+
+}
+
+.img1{
+	max-width:150px;
+}
+
+.contImg{
+	text-align: center; padding-top: 10px;
+}
+
+.service3{
+	width: 42%;
+	text-align: center;
+	float: left;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	margin-left: 20px;
+
+}
+.service3 h3{
+	font-size: 25px;
+	display: block;
+	width: 80%;
+	margin: 0px auto;
+
+}
+.red{
+	color: red;
+}
+.service4{
+	width: 90%;
+	text-align: center;
+	float: left;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	margin-left: 20px;
+
+}
+.service4 h3{
+	font-size: 25px;
+	display: block;
+	width: 80%;
+	margin: 0px auto;
+
+}
+
+
+
+.service img{
+	height: 48px;
+	margin-bottom: 20px;
+}
+.service h3{
+	margin-bottom: 10px;
+}
+.service p, .video p{
+	color: #444;
+	text-align: center;
+	display: block;
+	width: 80%;
+	margin: 0px auto;
+}
+
+
+
+
+
+/*iconos barra*/
+.iconos1{
+
+ clear:both;
+ float:left;
+
+ width:100%;
+
+ position: fixed;
+ bottom: 0;
+ right: 0;
+ left: 0;
+ overflow: auto;
+ text-align: left;
+ z-index: 999999999;
+ background-color: white;
+ padding-top: 5px;
+}
+
+.iconos1 ul{
+text-align: center;
+width: 100%
+}
+.iconos1 ul li{
+ float:none !important;
+ display: inline-block;
+ margin-bottom: 5px;
+     }
+.iconos1 ul li a {
+         text-decoration: none;
+         padding: 15px ;
+         font-size: 30px;
+     }
+.iconos1 ul li a img {
+         width: 30px;
+     }
+
+
+
+
+/*videos*/
+
+.video iframe{
+	width: 80%;
+	height: 170px;
+
+}
+
+/*footer*/
+#footer{
+	background: #333;
+	padding-top: 5px;
+	padding-bottom: 40px;
+	margin-top: 30px;
+	text-align: center;
+	color: white;
+
+}
+#footer .subheader{
+	color: white;
+}
+
+#networks{
+	display: block;
+	width: 218px;
+	margin: 0px auto;
+	list-style: none;
+	margin-bottom: 20px;
+	margin-top: 20px;
+
+}
+#networks li{
+	float: left;
+	margin-left: 20px;
+	margin-right: 20px;
+	transition: all 300ms;
+}
+#networks li:hover{
+	opacity: 0.8;
+	transform: scale(1.1, 1.1);
+}
+
+/*media query
+@media all and (max-width: 1000px){
+	#main-header{
+		background: black;
+	}
+}
+*/
+@media (max-width: 1225px){
+	.container{
+		width: 95%
+	}
+}
+
+@media (max-width: 1085px){
+	#main-header{
+		height: 60px;
+		line-height: 65px;
+	}
+	#logo{
+		width: 60%
+	}
+	/*
+
+	*/
+}
+
+@media (max-width: 999px){
+		#logo{
+		width: 227px;
+		float: none;
+		margin: 0px auto;
+	}
+	#menu{
+		float: none;
+		margin: 0px auto;
+	}
+	#slider{
+		overflow: hidden;
+		height: 150px
+	}
+	#slider h2{
+		font-size: 30px;
+		line-height: 30px;
+		margin-top: 50px;
+	}
+
+}
+@media (max-width: 780px){
+	.service, .video{
+		width: 70%;
+		float: none;
+		margin: 0px auto;
+		margin-top: 20px;
+		margin-bottom: 40px;
+	}
+
+	.service p, .video p{
+		margin-top: 10px;
+	}
+
+	.video iframe{
+		width: 80%;
+		height: 230px;
+
+	}
+}
+@media (max-width: 460px){
+	#slider h2{
+		font-size: 25px;
+		line-height: 30px;
+		margin-top: 60px;
+
+	}
+}
+
+@media (max-width: 377px){
+	#menu{
+		width: 100%;
+		text-align: center;
+
+	}
+	#menu ul li{
+		margin-left: 4%;
+		margin-right: 4%;
+	}
+	#slider h2{
+
+		margin-top: 40px;
+
+	}
+
+	.service, .video{
+		width: 90%;
+	}
+
+	.video iframe{
+		width: 80%;
+		height: 140px;
+	}
+
+}
+
+@media (max-width: 376px){
+	#main-header{
+		height: auto;
+	}
+	#menu ul li{
+		float: none;
+	}
+}
+
+
+
+
+
+/********************\
+  $Reset ☰
+\********************/
+
+a {
+  text-decoration:none;
+}
+/********************\
+  $Layout ☰
+\********************/
+
+/*Damos estilos al menú*/
+.navi {
+  position:absolute;
+  width:150px;
+  height:100vh;
+  top:0;
+  left:-220px; /*Ocultamos el menú en la parte izquierda para que no se vea a menos que pulsemos sobre la hamburguesa*/
+  padding-top:47px;
+  background-color: rgba(29, 33, 32, 1);
+  border-right:4px solid #DE4011;
+  transition:all .5s ease; /*Damos a la caja del menú una transición para que tenga un desplazamiento suave*/
+}
+   /*Estilos de los li del menú*/
+   .navi__item {
+     display:block;
+     width:96%;
+     margin:0 auto;
+     line-height:2;
+     position:relative; /*Le damos una posición relativa para posteriormente añadirle el triangulo que indica que se está en la página actual del menú*/
+     border-bottom:.5px solid rgba(59, 62, 61, 1);
+     border-top:.5px solid rgba(59, 62, 61, 1);
+     background-color:transparent;
+     font-family: 'Lato', sans-serif;
+     text-align:center;
+     color:rgba(221, 231, 228, 1);
+   }
+       /*Damos colocamos el triangulo negro a la pestaña del menú dónde nos encontramos actualmente*/
+       .current:before {
+          content:"";
+          width:0;
+          height:0;
+          position:absolute; /*Le damos al before una posición absoluta relativa al li que lo contiene*/
+          border-top:17px solid transparent;
+          border-left:15px solid #1D2120;
+          border-bottom:17px solid transparent;
+          top:0px;
+          right:-15px; /*Lo posicionamos -15px a la derecha de su contenedor*/
+          z-index:4; /*le otorgamos un z-index alto para que se posicione arriba de otros elementeos*/
+       }
+      /*Colocamos el borde verde al triangulo por medio de otro trangulo verde*/
+      .current:after {
+          content:"";
+          width:0;
+          height:0;
+          position:absolute;/*Le damos al after una posición absoluta relativa al li que lo contiene*/
+          border-top:16.5px solid transparent;
+          border-left:17px solid rgba(114, 126, 3, 1);
+          border-bottom:17px solid transparent;
+          top:.5px;
+          right:-21px;
+          z-index:1;  /*le otorgamos un z-index bajo para que se posicione debajo del trinagulo negro*/
+      }
+  /*Estos son los estilos de la hamburguesa del menú que abre y cierra el mismo*/
+  .menu-toogle1 {
+    position:absolute; /*Lo posicionamos absolutamente para poder darle una posición y poder moverlo según el menú esté abierto o cerrado*/
+    width: 35px;
+    line-height:1.1;
+    text-align:center;
+    top:6.5px; /*Le damos una posición top y left en donde queramos que se encuentre la hamburguesa del menú*/
+    left: 8px; 
+    border-radius:3px;
+    background-color: #142b25;
+    transition: all .5s ease; /*Añadimos una transición para que realice un desplazamineto suave*/
+    z-index:10;
+  }
+    /*Añadimos la haburguesa y le damos unos estilos*/
+    .menu-toogle1::before {
+      content:"☰";
+      font-size:32px;
+      color:white;
+    }
+
+/* Le damos unos estilos al contenedor principal*/
+.main-w {
+  width:100%;
+  height:100vh;
+  transition: all .5s ease;
+}   
+    .header-w figure {
+      width:100%;
+      height:150px;
+      text-align:center;
+      position:relative;
+    }
+        .header-w figure:before {
+          content:"O";
+          width:15px;
+          height:15px;
+          position:absolute;
+          background-color:white;
+          border-radius:100%;
+          color:#A9BC00;
+          font-size:120%;
+          font-wheight:bolder;
+          font-family:verdana;
+          left:42vw;
+          top:9vw;     
+        }
+        .header-w figure:after {
+          content:"O";
+          width:15px;
+          height:15px;
+          position:absolute;
+          background-color:white;
+          border-radius:100%;
+          color:#A9BC00;
+          font-size:120%;
+          font-wheight:bolder;
+          font-family:verdana;
+          left:50.8vw;
+          top:9vw; 
+        }
+    .featured-img {
+      margin:3em 6vw 0 0;
+      border:4px solid white;
+      border-radius:100%;
+    }
+    .header-w__description {
+      width:80%;
+      height:auto;
+      margin:0 auto;
+      padding:1em;
+      line-height:2;
+      text-align:center;
+      color:rgba(33, 36, 8, 1);
+    }
+        .header-w__title
+        {
+          font-size:300%;
+          font-family:Lobster;
+          margin:1em 0 0 0;
+        }
+        .header-w__title2 {
+          font-size:250%;
+          font-family:Lobster;
+          margin:0;
+        }
+    .paragraph {
+      width:80%;
+      margin:0 auto;
+      text-align:center;
+      font-family:'Source Sans Pro', sans-serif;
+    }
+
+    /*Estos son los estilos que le dan la funcionalidad al menú*/
+    /*El checkbox según esté activado o no hará que el menú aparezca o desaparezca*/
+    .checkbox {
+      display:none; /*Ocultamos el checkbox pues no nos interesa que se vea*/
+    }
+    .checkbox:checked ~ .navi {
+      left:0px; /*Le quitamos el left negativo para que el menú vuelva a su posición original*/
+      position:fixed; /* Fijamos el menú lateral para que se desplace cuando hagamos scroll*/
+    }
+    .checkbox:checked ~ .main-w {
+      margin-left:200px; /*Cuando el checkbox asigna un margen al contenedor principal para que se desplace junto con el menú*/
+    }
+    .checkbox:checked ~ .menu-toogle1 { 
+      left:208px;
+      position:fixed; /*Fijamos la hamburgues para que se desplace junto con el menú*/
+    }
+
